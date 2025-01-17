@@ -1,0 +1,19 @@
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Adjust as needed */
+}
+
+button {
+  border-radius: 15px;
+  margin: 5px; /* Add some margin between buttons */
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 auto;
+}
