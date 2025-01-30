@@ -1,9 +1,9 @@
-var name = prompt('What is your name?');
+var userName = prompt('What is your name?');
 let userScore = 0;
 let computerScore = 0;
 let round = 0;
 let gameOver = false; // Add a flag to track if the game is over
-document.getElementById('name').innerHTML = `Hey ${name}, let's play Rock, Paper, Scissors!`;
+document.getElementById('name').innerHTML = `Hey ${userName}, let's play Rock, Paper, Scissors!`;
 // Function to get the computer's choice
 const getComputerChoice = () => {
   const randomNumber = Math.floor(Math.random() * 3);
