@@ -1,9 +1,7 @@
 console.log("hi");
 
 // Variables to keep track of scores and rounds
-let userScore = 0;
-let computerScore = 0;
-let round = 0;
+
 
 var userName = prompt('What is your name?');
 let userScore = 0;
