@@ -38,7 +38,7 @@ const determineWinner = (userChoice, computerChoice) => {
   } else if (userChoice === 'rock' && computerChoice === 'scissors') {
     userScore++;
     return 'You won!';
-  if (userChoice === 'rock' && computerChoice === 'paper') {
+   }if (userChoice === 'rock' && computerChoice === 'paper') {
     computerScore++;
     return 'The computer won!';
   } else if (userChoice === 'rock' && computerChoice === 'scissors') {
@@ -51,7 +51,7 @@ const determineWinner = (userChoice, computerChoice) => {
   } else if (userChoice === 'paper' && computerChoice === 'rock') {
     userScore++;
     return 'You won!';
-  if (userChoice === 'paper' && computerChoice === 'scissors') {
+  }if (userChoice === 'paper' && computerChoice === 'scissors') {
     computerScore++;
     return 'The computer won!';
   } else if (userChoice === 'paper' && computerChoice === 'rock') {
@@ -63,7 +63,7 @@ const determineWinner = (userChoice, computerChoice) => {
     return 'The computer won!';
   } else if (userChoice === 'scissors' && computerChoice === 'paper') {
     userScore++;
-    return 'You won!';
+    return 'You won!';}
   if (userChoice === 'scissors' && computerChoice === 'rock') {
     computerScore++;
     return 'The computer won!';
