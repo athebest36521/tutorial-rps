@@ -1,3 +1,10 @@
+console.log("hi");
+
+// Variables to keep track of scores and rounds
+let userScore = 0;
+let computerScore = 0;
+let round = 0;
+
 var userName = prompt('What is your name?');
 let userScore = 0;
 let computerScore = 0;
@@ -21,11 +28,18 @@ const getComputerChoice = () => {
 const determineWinner = (userChoice, computerChoice) => {
   if (userChoice === 'bomb') {
     userScore++;
+    userScore++;
     return 'You won!';
   }
   if (userChoice === computerChoice) {
     return 'The game is a tie!';
   }
+  if (userChoice === 'rock' && computerChoice === 'paper') {
+    computerScore++;
+    return 'The computer won!';
+  } else if (userChoice === 'rock' && computerChoice === 'scissors') {
+    userScore++;
+    return 'You won!';
   if (userChoice === 'rock' && computerChoice === 'paper') {
     computerScore++;
     return 'The computer won!';
@@ -39,7 +53,19 @@ const determineWinner = (userChoice, computerChoice) => {
   } else if (userChoice === 'paper' && computerChoice === 'rock') {
     userScore++;
     return 'You won!';
+  if (userChoice === 'paper' && computerChoice === 'scissors') {
+    computerScore++;
+    return 'The computer won!';
+  } else if (userChoice === 'paper' && computerChoice === 'rock') {
+    userScore++;
+    return 'You won!';
   }
+  if (userChoice === 'scissors' && computerChoice === 'rock') {
+    computerScore++;
+    return 'The computer won!';
+  } else if (userChoice === 'scissors' && computerChoice === 'paper') {
+    userScore++;
+    return 'You won!';
   if (userChoice === 'scissors' && computerChoice === 'rock') {
     computerScore++;
     return 'The computer won!';
