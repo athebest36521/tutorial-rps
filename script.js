@@ -90,7 +90,7 @@ const playGame = (userChoice) => {
 //`Hey ${name}, you threw: ${userChoice}. The computer threw: ${computerChoice}. ${result}`;
   round++;
   if (round === 5) {
-    const finalResult = userScore > computerScore ? 'Hooray! You won the game!' : 'The computer won the game!';
+    const finalResult = userScore > computerScore ? 'Hooray! You won the game!' : 'Dang It! The computer won the game! Better luck next time!';
     document.getElementById('game-result').innerHTML += '<br>' + finalResult;
     gameOver = true; // Set the game over flag
   }
